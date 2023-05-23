@@ -1,3 +1,4 @@
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -77,6 +78,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Epilogue';
 }
 
 html,
@@ -86,22 +88,79 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: black;
+  /* background:  */
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.MuiPaper-root{
+  background-color: white;
+  color: black;
+}
+.MuiPaper-root button{
+  color: black;
+}
+.MuiButtonBase-root {
+  text-transform: capitalize;
+}
+.loginstylelink{
+  padding: 7px;
+  background-color: transparent;
+}
+.loginstylelink.active{
+ 
+    border-radius: 6px;
+    border: 2px solid black;
+}
+@media (min-width: 600px){
+  .css-1t6c9ts{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
+}
+
+.MuiPaper-root{
+  box-shadow: none;
+}
+.body{
+  padding: 60px;
+  text-align: left;
+}
+.h1style{
+  font-weight: 700;
+    font-size: 40px;
+    padding: 30px 0px;
+}
+.MuiButtonBase-root{
+  /* background-color: rgb(0, 0, 0); */
+    margin: 25px 0px;
+
+}
+li .MuiButtonBase-root{
+  /* background-color: rgb(0, 0, 0); */
+    margin: 0px !important;
+
+}
+.col1{
+  order: 1;
+}
+.col2{
+  order: 2;
+}
+@media screen and (max-width:600px) {
+  .col1{
+    order: 2;
+  }
+  .col2{
+    order: 1;
+  }
+}
+.MuiButtonBase-root:active button{
+  background-color: white;
+    color: black;
 }
