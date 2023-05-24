@@ -114,7 +114,7 @@ type Anchor = 'top' | 'left' | 'bottom' | 'right';
             )})}
             {pages2.map((page,index) => {return(
               
-           <Link href="/" className='MuiButtonBase-root'style={{display:"inline-flex",padding:"6px 8px"}} key={index}>{page}</Link>
+           <Link href="/" className='MuiButtonBase-root'style={{display:"inline-flex",padding:"6px 8px",color:"black"}} key={index}>{page}</Link>
              
               
             )})}</div>

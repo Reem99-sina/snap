@@ -14,14 +14,14 @@ function Body() {
     console.log(theme)
   return (
     <div className='body'>
-        <Grid container spacing={2} alignItems={"center"}>
+        <Grid container spacing={2} alignItems={"center"} sx={{height:"100%"}}>
         
             <Grid item lg={6} md={6} sm={6} className='col1'>
                 <h1 className='h1style'>
                     Make Remote Work
                 </h1>
                 <p style={{color:`${theme.palette.primary.light}`}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum non expedita voluptates pariatur dolorem blanditiis magni molestias, fugiat atque eaque laudantium voluptatibus asperiores earum ea inventore corporis fuga iure obcaecati.</p>
-                <Button variant="contained"style={{backgroundColor:`${theme.palette.primary.dark}`}}>Learn More</Button>
+                <Button variant="contained"style={{backgroundColor:`${theme.palette.primary.dark}`,margin:"22px 0px"}}>Learn More</Button>
                 <Grid container spacing={2} >
                     <Grid item sm={3} >
                     <Image src={meet}alt='' style={{width:"100%"}}/></Grid>
